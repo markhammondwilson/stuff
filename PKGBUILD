@@ -10,4 +10,5 @@ sha512sums=("SKIP")
 package() {
 	mkdir -p "${pkgdir}/usr/bin"
 	cp "${srcdir}/flstart" "${pkgdir}/usr/bin/flstart"
+ 	chmod +x "${pkgdir}/usr/bin/flstart"
 }
